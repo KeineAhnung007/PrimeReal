@@ -24,6 +24,12 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: List files
+        run: ls -l
+      - name: List dist files
+        run: ls -l dist
+
+
       - name: Deploy to gh-pages
         run: |
           git config --global user.name 'github-actions[bot]'
