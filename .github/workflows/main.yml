@@ -2,8 +2,6 @@ name: Deploy Vite to GitHub Pages
 
 on:
   workflow_dispatch:
-    branches:
-      - main
 
 jobs:
   build-and-deploy:
@@ -28,7 +26,6 @@ jobs:
         run: ls -l
       - name: List dist files
         run: ls -l dist
-
 
       - name: Deploy to gh-pages
         run: |
